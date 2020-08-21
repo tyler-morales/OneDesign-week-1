@@ -27,13 +27,9 @@ export default {
   grid-template-columns: 3fr 1fr;
   align-items: center;
   gap: 20px;
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
+  max-width: 90vw;
 
   &--block {
-    // border-top: 2px solid #f6f6f6;
     padding: 20px 0;
   }
 
@@ -42,18 +38,42 @@ export default {
     color: #9e9e9e;
     font-size: 12px;
     letter-spacing: 0.1em;
+
+    @media (max-width: 400px) {
+      font-size: 10px;
+    }
   }
 
   &--title {
     margin: 10px 0;
+    @media (max-width: 400px) {
+      font-size: 14px;
+      margin: 0;
+    }
   }
 
   &--para {
     color: #9e9e9e;
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
   }
 
   &--img {
     padding: 25px;
+
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+    @media (max-width: 400px) {
+      width: 100px;
+    }
+  }
+
+  .read-more--right {
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
   }
 }
 </style>

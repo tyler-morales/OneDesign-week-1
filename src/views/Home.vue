@@ -33,7 +33,7 @@
 
     <div class="grid">
       <div class="grid__featured">
-        <h2>Featured Stories</h2>
+        <h2 class="section--title">Featured Stories</h2>
         <div class="grid__featured__container">
           <Featured
             v-for="(feature, index) in features"
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="grid__latest">
-        <h2>Latest Stories</h2>
+        <h2 class="section--title">Latest Stories</h2>
         <div class="grid__latest__container">
           <LatestCard
             v-for="(latest, index) in latests"
@@ -152,8 +152,12 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-top: 10px;
 
-    h2 {
+    .section--title {
       margin-bottom: 30px;
+    }
+
+    & > * {
+      max-width: 90vw;
     }
 
     &__latest {

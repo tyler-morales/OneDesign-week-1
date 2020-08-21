@@ -25,6 +25,7 @@ body {
 
 #app {
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+  max-width: 90vw;
 }
 </style>

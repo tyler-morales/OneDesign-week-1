@@ -38,6 +38,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 90vw;
 
   h3 {
     font-size: 22px;
