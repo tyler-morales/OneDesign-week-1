@@ -31,7 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 .feature--img {
-  min-height: 80vh;
+  margin: 40px 0;
+  min-height: 50vh;
   background-size: cover;
   color: white;
   padding: 40px;
@@ -39,6 +40,10 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   max-width: 90vw;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   h3 {
     font-size: 22px;

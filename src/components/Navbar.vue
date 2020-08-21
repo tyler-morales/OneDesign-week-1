@@ -26,6 +26,11 @@ export default {}
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 600px) {
+    display: grid;
+    gap: 5px;
+  }
+
   &--home {
     font-weight: 500;
     font-size: 28px;
@@ -37,12 +42,25 @@ export default {}
 
     & > * {
       padding: 0 10px;
+
+      @media (max-width: 600px) {
+        padding: 0;
+        padding-right: 10px;
+      }
     }
   }
 
   &__account {
     & > * {
       padding: 0 10px;
+
+      @media (max-width: 600px) {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }

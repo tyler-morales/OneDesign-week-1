@@ -72,6 +72,12 @@ export default {
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
           img: 'https://picsum.photos/800'
+        },
+        {
+          title: 'Explore the Mountains',
+          description:
+            'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
+          img: 'https://picsum.photos/800'
         }
       ],
       latests: [
@@ -165,14 +171,14 @@ export default {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-top: 10px;
+    margin-top: 20px;
 
     @media (max-width: 600px) {
       gap: 20px;
     }
 
     .section--title {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     & > * {
