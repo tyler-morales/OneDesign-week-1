@@ -12,7 +12,6 @@
       <span>Sign Up</span>|
       <span>Login</span>
     </div>
-    <!-- <router-view /> -->
   </nav>
 </template>
 

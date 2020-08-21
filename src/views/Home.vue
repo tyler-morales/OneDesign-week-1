@@ -102,6 +102,7 @@ export default {
 <style lang="scss">
 .home {
   margin-top: 40px;
+
   h2 {
     font-weight: 500;
   }
@@ -123,6 +124,10 @@ export default {
     &--title {
       font-size: 72px;
       margin: 10px;
+
+      @media (max-width: 600px) {
+        font-size: 36px;
+      }
     }
 
     p {
@@ -131,6 +136,12 @@ export default {
       margin: 0 auto;
       line-height: 2;
       font-weight: 300;
+
+      @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 1.6;
+        width: 80%;
+      }
     }
 
     .read-more {
@@ -139,6 +150,10 @@ export default {
       margin-top: 100px;
       justify-content: center;
       gap: 10px;
+
+      @media (max-width: 600px) {
+        margin-top: 20px;
+      }
 
       svg {
         margin: 0 auto;
@@ -151,6 +166,10 @@ export default {
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-top: 10px;
+
+    @media (max-width: 600px) {
+      gap: 20px;
+    }
 
     .section--title {
       margin-bottom: 30px;
