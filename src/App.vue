@@ -18,11 +18,13 @@ export default {
 body {
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0;
   max-width: 90vw;
   min-height: 100vh;
 }
 
 #app {
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 300px;
 }
 </style>
