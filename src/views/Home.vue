@@ -44,7 +44,13 @@
       </div>
       <div class="grid__latest">
         <h2>Latest Stories</h2>
-        <div class="grid__latest__container"></div>
+        <div class="grid__latest__container">
+          <LatestCard
+            v-for="(latest, index) in latests"
+            :key="index"
+            :latest="latest"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -52,9 +58,11 @@
 
 <script>
 import Featured from '@/components/Featured'
+import LatestCard from '@/components/LatestCard'
 export default {
   components: {
-    Featured
+    Featured,
+    LatestCard
   },
   data: function() {
     return {
@@ -63,7 +71,27 @@ export default {
           title: 'Explore the Mountains',
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
-          img: '../assets/images/iceland.jpg'
+          img: 'https://picsum.photos/800'
+        }
+      ],
+      latests: [
+        {
+          cat: 'Stories',
+          title: 'Rising Above the Clouds',
+          para:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, consectetur!'
+        },
+        {
+          cat: 'Stories',
+          title: 'Rising Above the Clouds',
+          para:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, consectetur!'
+        },
+        {
+          cat: 'Stories',
+          title: 'Rising Above the Clouds',
+          para:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, consectetur!'
         }
       ]
     }
@@ -120,8 +148,24 @@ export default {
 
   .grid {
     display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 10px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    &__latest {
+      &__container {
+        & > * {
+          border-top: 2px solid #f6f6f6;
+          &:last-child {
+            border-bottom: 2px solid #f6f6f6;
+          }
+        }
+      }
+    }
   }
 }
 </style>

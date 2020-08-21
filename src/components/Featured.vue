@@ -31,7 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 .feature--img {
-  border: 2px dotted peru;
   min-height: 80vh;
   background-size: cover;
   color: white;
