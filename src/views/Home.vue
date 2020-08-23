@@ -71,7 +71,7 @@ export default {
           title: 'Explore the Mountains',
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
-          img: 'https://picsum.photos/800'
+          img: '/assets/images/island.jpg'
         },
         {
           title: 'Explore the Mountains',
