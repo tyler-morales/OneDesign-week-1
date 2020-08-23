@@ -59,6 +59,7 @@
 <script>
 import Featured from '@/components/Featured'
 import LatestCard from '@/components/LatestCard'
+
 export default {
   components: {
     Featured,
@@ -71,13 +72,13 @@ export default {
           title: 'Explore the Mountains',
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
-          img: '/assets/images/island.jpg'
+          img: require('@/assets/images/rushmore.jpg')
         },
         {
           title: 'Explore the Mountains',
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
-          img: 'https://picsum.photos/800'
+          img: require('@/assets/images/rushmore.jpg')
         }
       ],
       latests: [

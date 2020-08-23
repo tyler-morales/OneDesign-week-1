@@ -17,8 +17,8 @@ export default {
     imageStyleObject() {
       return {
         backgroundImage: `
-          linear-gradient(to bottom,rgba(245, 246, 252, 0) 45%,rgb(0, 0, 0) 100%), 
-          url(${this.feature.img})
+          linear-gradient(to bottom,rgba(245, 246, 252, 0) 45%,rgb(0, 0, 0) 100%),
+          url('${this.feature.img}')
         `,
         backgrountRepeat: 'no-repeat',
         backgroundSize: 'cover',
