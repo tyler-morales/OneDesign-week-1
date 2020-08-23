@@ -78,7 +78,7 @@ export default {
           title: 'Explore the Mountains',
           description:
             'Democracy never lasts long. It soon wastes, exhausts and murders itself. There was never a democracy that did not commit suicide."',
-          img: require('@/assets/images/rushmore.jpg')
+          img: require('@/assets/images/rainer.jpg')
         }
       ],
       latests: [
